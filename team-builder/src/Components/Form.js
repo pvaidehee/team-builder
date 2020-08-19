@@ -15,7 +15,7 @@ export default function TeamForm(props) {
     }
 
     return (
-        <form className='form container' onSubmit={onSubmit}>
+        <PageForm className='form container' onSubmit={onSubmit}>
             <div className='form-group submit'>
                 <h2>Add a Team Member's Info: </h2>
                 <button disabled={!values.name || !values.email || !values.role }>Submit</button>
@@ -56,7 +56,7 @@ export default function TeamForm(props) {
                 </label>
             </PageDiv>
             </div>
-        </form>
+        </PageForm>
     )
 } 
 
@@ -65,4 +65,32 @@ display:flex;
 flex-direction:row;
 justify-content: space-around;
 padding-top: 30px;
+
+input:focus{
+    background: lightblue;
+}
+select:focus{
+    background: lightblue;
+}
+
+label{
+    color:salmon;
+}
+`;
+
+const PageForm = styled.form`
+h2{
+    color:plum;
+}
+h4{
+    color:indianred;
+}
+button:active{
+    color:salmon;
+    background:lavender;
+}
+button{
+    color: orange;
+    background:black;
+}
 `;

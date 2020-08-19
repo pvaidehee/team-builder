@@ -73,4 +73,15 @@ export default App;
 
 const ThisDiv = styled.div`
 text-align:center;
+background: lavenderblush;
+padding-top: 2px;
+padding-bottom: 20px;
+color:orange;
+:hover{
+  color:purple;
+}
+
+h1{
+  color:hotpink;
+}
 `;
